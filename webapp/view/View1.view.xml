@@ -1,0 +1,158 @@
+<mvc:View controllerName="com.fitness.fitness.controller.View1" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<!--<Shell id="shell">-->
+	<App id="app">
+		<!--<pages>-->
+		<Page id="page" title="{i18n>title}">
+			<!--<content>-->
+			<Label class="sapUiSmallMargin" text="Select type of Drink"></Label>
+			<ComboBox class="sapUiTinyMargin" id="typeOfDrink" items="{ path: 'listModel>/drinks'}" selectionChange="onlistSelected">
+				<core:ListItem key="{listModel>strCategory}" text="{listModel>strCategory}"/>
+			</ComboBox>
+			<Label class="sapUiSmallMargin" text="Select type of Cocktail"></Label>
+			<ComboBox class="sapUiTinyMargin" id="filterAlcohol" items="{ path: 'filterModel>/drinks'}" selectionChange="onfltrItmSelected">
+				<core:ListItem key="{filterModel>idDrink}" text="{filterModel>strDrink}"/>
+			</ComboBox>
+			<Panel class="panel" visible="{visibleModel>/panelPreparation}">
+				<Panel headerText="Required Items">
+					<!--<Bar>-->
+					<!--	<contentRight>-->
+					<!--		<Label design="Bold" text="1 oz = 29.5735 ml"></Label>-->
+					<!--	</contentRight>-->
+					<!--</Bar>-->
+					<l:Grid binding="{preparationModel>/}" defaultSpan="L12 M4 S12">
+						<l:Grid visible="{visibleModel>/strIngredient1}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient1"></Label>
+								<Text text="{preparationModel>strIngredient1}"></Text>
+								<Label design="Bold" text="Measure1"></Label>
+								<Text text="{preparationModel>strMeasure1}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient2}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient2"></Label>
+								<Text text="{preparationModel>strIngredient2}"></Text>
+								<Label design="Bold" text="Measure2"></Label>
+								<Text text="{preparationModel>strMeasure2}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient3}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient3"></Label>
+								<Text text="{preparationModel>strIngredient3}"></Text>
+								<Label design="Bold" text="Measure3"></Label>
+								<Text text="{preparationModel>strMeasure3}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient4}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient4"></Label>
+								<Text text="{preparationModel>strIngredient4}"></Text>
+								<Label design="Bold" text="Measure4"></Label>
+								<Text text="{preparationModel>strMeasure4}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient5}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient5"></Label>
+								<Text text="{preparationModel>strIngredient5}"></Text>
+								<Label design="Bold" text="Measure5"></Label>
+								<Text text="{preparationModel>strMeasure5}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient6}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient6"></Label>
+								<Text text="{preparationModel>strIngredient6}"></Text>
+								<Label design="Bold" text="Measure6"></Label>
+								<Text text="{preparationModel>strMeasure6}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient7}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient7"></Label>
+								<Text text="{preparationModel>strIngredient7}"></Text>
+								<Label design="Bold" text="Measure7"></Label>
+								<Text text="{preparationModel>strMeasure7}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient8}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient8"></Label>
+								<Text text="{preparationModel>strIngredient8}"></Text>
+								<Label design="Bold" text="Measure8"></Label>
+								<Text text="{preparationModel>strMeasure8}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient9}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient9"></Label>
+								<Text text="{preparationModel>strIngredient9}"></Text>
+								<Label design="Bold" text="Measure9"></Label>
+								<Text text="{preparationModel>strMeasure9}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient10}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient10"></Label>
+								<Text text="{preparationModel>strIngredient10}"></Text>
+								<Label design="Bold" text="Measure10"></Label>
+								<Text text="{preparationModel>strMeasure10}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient11}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient11"></Label>
+								<Text text="{preparationModel>strIngredient11}"></Text>
+								<Label design="Bold" text="Measure11"></Label>
+								<Text text="{preparationModel>strMeasure11}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient12}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient12"></Label>
+								<Text text="{preparationModel>strIngredient12}"></Text>
+								<Label design="Bold" text="Measure12"></Label>
+								<Text text="{preparationModel>strMeasure12}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient13}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient13"></Label>
+								<Text text="{preparationModel>strIngredient13}"></Text>
+								<Label design="Bold" text="Measure13"></Label>
+								<Text text="{preparationModel>strMeasure13}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient14}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient14"></Label>
+								<Text text="{preparationModel>strIngredient14}"></Text>
+								<Label design="Bold" text="Measure14"></Label>
+								<Text text="{preparationModel>str14}"></Text>
+							</l:content>
+						</l:Grid>
+						<l:Grid visible="{visibleModel>/strIngredient15}" containerQuery="true" defaultSpan="L3 M4 S12">
+							<l:content>
+								<Label design="Bold" text="Ingredient15"></Label>
+								<Text text="{preparationModel>strIngredient15}"></Text>
+								<Label design="Bold" text="Measure15"></Label>
+								<Text text="{preparationModel>str15}"></Text>
+							</l:content>
+						</l:Grid>
+					</l:Grid>
+				</Panel>
+				<Panel binding="{preparationModel>/}" headerText="Preparation Method">
+					<Text text="{preparationModel>strInstructions}"></Text>
+				</Panel>
+				<Panel binding="{preparationModel>/}" headerText="Cocktail Image">
+					<Image class="image" src="{preparationModel>strDrinkThumb}"></Image>
+				</Panel>
+			</Panel>
+			<!--</content>-->
+		</Page>
+		<!--</pages>-->
+	</App>
+	<!--</Shell>-->
+</mvc:View>

@@ -1,0 +1,10 @@
+/* Image  custom styles here */
+
+.image {
+    margin-left: 260px !important;
+}
+
+.panel .sapMPanel .sapMPanelHdr {
+    color: deeppink !important;
+    background-color: #74abe2 !important;
+}
